@@ -40,6 +40,11 @@ if(isset($_POST['submit']))
     width: 100%;
     height:100vh;
 }
+.sidebar{
+    background-color:white;
+}
+
+
     </style>
 </head>
 <body>
