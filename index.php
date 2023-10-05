@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
     height:100vh;
 }
 .sidebar{
-    background-color:dark;
+    background-color:white;
 }
 
 
