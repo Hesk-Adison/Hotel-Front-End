@@ -1,0 +1,142 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Baloo+Da+2:wght@400;500;600&family=Josefin+Sans:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Lato:ital,wght@1,700&family=Libre+Baskerville:wght@400;700&family=Mulish:ital,wght@0,200;0,300;1,200&family=Updock&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --font-primary:'Josefin+Sans';
+    --font-secundary:'Baloo+Da+2';
+    --font-action: 'Mulish';
+}
+
+body{
+    background-color: rgb(3, 22, 75);
+   
+}
+   
+.cont{
+   width: 100%;
+   height: 4rem;
+   background-color: #ffffff99;
+   position: relative;
+
+}
+.top{
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+}
+
+
+.cont ul{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+   
+}
+.cont li{
+    margin: 2rem;
+    font-family: var(--font-secundary);
+    font-weight: 800;
+    
+}
+
+.cont a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.hoteis{
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 4rem;
+  
+}
+
+.project{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.card{
+    width: 18rem;
+    height:25rem;
+    position: relative;
+    margin-left: 1rem;
+    z-index: 0;
+   
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+ 
+}
+.card-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    transition:  opacity 0.4s ;
+}
+
+.card:hover .card-img img{
+    opacity: .5;
+}
+.card-info{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.3rem 0.3rem rgba(0,0,0, .4);
+    transition: all .4s;
+}
+.card-info h2{
+    font-family: var(--font-secundary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(250, 239, 239);
+}
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.card-info p{
+    font-family: var(--font-secundary);
+    color: rgb(16, 179, 190);
+    font-weight: bolder;
+    width: 80%;
+}
+.btn{
+    letter-spacing: .1rem;
+    color: rgb(250, 239, 239);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(6, 121, 197) 0%, rgb(53, 17, 138) 100%);
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bug{
+    margin-top: 3rem;
+    margin-left: 38.5rem;
+    text-transform: uppercase;
+}
+
+.card-info button{
+    font-family:var(--font-action) ;
+    font-size: 0.8rem;
+  
+
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
