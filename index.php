@@ -5,14 +5,10 @@ require_once('coneccao.php');
 if(isset($_POST['submit']))
 {
    print_r($_POST['nome']);
-   // print_r($_POST['E-mail']);
-   //print_r($_POST['mensagem']);
-
    include_once('coneccao.php');
    $nome = $_POST['nome'];
    $email = $_POST['email'];
    $mensagem = $_POST['mensagem'];
-
    $result = mysqli_query( $conexao, "INSERT INTO comentario(nome,Email,comentario) values($nome,$email,$mensagem)");
 }
 
@@ -44,6 +40,34 @@ if(isset($_POST['submit']))
     background-color:white;
 }
 
+.More{
+    width: 100%;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.divisoes{
+    display:flex;
+    flex-direction:row;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+}
+.esquerda1{
+    width: 50%;
+}
+.esquerda1 p{
+    font-size: 20px;
+    text-align: justify;
+}
 
     </style>
 </head>
@@ -72,11 +96,11 @@ if(isset($_POST['submit']))
          <nav>
              <ul class="menu">
                  <li class="menu-iten"><a href="#" class="menu-item">Home</a></li>               
-                 <li class="menu-iten"><a href="#saiba" class="menu-item">Sobre Nos</a></li>
+                 <!-- <li class="menu-iten"><a href="#saiba" class="menu-item">Sobre Nos</a></li> -->
                  <li class="menu-iten"><a href="#hotel" class="menu-item">Hoteis</a></li>
                  <li class="menu-iten"><a href="#reserva" class="menu-item">Reserva</a></li>
                  <li class="menu-iten"><a href="#contacto" class="menu-item">Contacto</a></li>
-                 <li class="menu-iten"><a href="hotel.html" class="menu-item">Mais hoteis</a></li>
+                 <!-- <li class="menu-iten"><a href="hotel.html" class="menu-item">Mais hoteis</a></li> -->
              </ul>
          </nav>
          <div class="social-midia">
@@ -85,12 +109,12 @@ if(isset($_POST['submit']))
             <a href=""><i class="fa-brands fa-twitter"></i></i></a>
         </div>
      </div>
-     <section class="saiba-mais" id="saiba">
+     <!-- <section class="saiba-mais" id="saiba">
         <div class="sessao-header">
             <h1>Sobre Nós</h1>
         </div>
         <div class="posit">
-        <div class="saiba-left">
+        <div class="lern-left">
             <p> Sinta-se como uma celebridade com o serviço de topo dos nossos hoteis
                 
                 Com uma piscina exterior e um restaurante, localizado em Maputo os nossos hoteis disponibilizam acesso Wi-Fi gratuito.
@@ -111,8 +135,37 @@ if(isset($_POST['submit']))
             </div>
 
         </div>
-    </div>
+    </div> 
 
+    </section>-->
+
+    <section class='More'>
+      
+            <div class="sessao-header">
+        <h1>Saiba Mais</h1>
+    </div>
+        <div class="divisoes" id='saiba'>
+
+<div class="esquerda1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.    
+                
+            </p>
+</div>
+
+<div class="direita">
+<div class="slide">
+              <ul>
+                  <li> <img src="img/rece.jpg"> </li>
+                  <li><img src="img/piscina.jpg"></li>
+                  <li><img src="img/file.jpg"></li>
+              </ul>
+            </div>
+
+</div>
+
+        </div>
     </section>
      <div class="sessao-header">
         <h1>Hoteis</h1>
@@ -159,7 +212,7 @@ if(isset($_POST['submit']))
 
      </section>
      <div class="btn-bug">
-     <a href="hotel.html"><button class="btn bug" >mais hoteis</button></a>
+     <!-- <a href="hotel.html"><button class="btn bug" >mais hoteis</button></a> -->
     </div>
     <section class="orcamento" id="reserva">
         <div class="orcamento-wraper">
@@ -226,7 +279,7 @@ if(isset($_POST['submit']))
      <footer>
          <div class="footer-content">
              <p>
-                 Projecto final /2022, Heski Adilson Fernando
+                 Projecto/2022, Heski Adilson Fernando
              </p>
              <div class="social-list">
                  <ul>

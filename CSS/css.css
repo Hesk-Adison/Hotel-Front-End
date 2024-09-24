@@ -618,3 +618,31 @@ footer{
     100%{left: 0px}
 }
 
+.More{
+    width: 100%;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.divisoes{
+    display:flex;
+    flex-direction:row;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+}
+.esquerda1{
+    width: 50%;
+}
+.esquerda1 p{
+    font-size: 20px;
+    text-align: justify;
+}
